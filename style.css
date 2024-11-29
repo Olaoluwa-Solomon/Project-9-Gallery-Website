@@ -1,0 +1,380 @@
+/* General Styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* Welcome Page Styling */
+#welcome-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/images/Welcome\ bg.jpg') no-repeat center fixed;
+    background-size: cover;
+    /* Replace with your image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: slideUp 3s ease-out;
+}
+
+#home-page {
+    position: relative;
+    opacity: 0;
+    display: none;
+    animation: slideDown 0.5s ease-out forwards;
+}
+.welcome-content {
+    text-align: center;
+    color: white;
+}
+
+.welcome-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.welcome-content .goal {
+    margin: 0px;
+    border: 1px solid white;
+    width: 600px;
+    padding: 0px;
+}
+
+.welcome-content .goal h4 {
+    font-size: 2.5em;
+    font-weight: lighter;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Keyframes for Animations */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        /* visibility: hidden; */
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*--------Body and Font Styles----------*/
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('/images/banner\ 5\ by\ 9\ feets_053727.jpg') center/cover no-repeat;
+}
+
+
+/*------------Navbar Styles-------------*/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*-----------Navbar Container-------------*/
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+/*-------Logo---------*/
+.navbar-logo {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: cursive;
+}
+
+.navbar-icons a {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-container {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    background: rgba(0, 0, 0, 0.7);
+}
+.main-container img {
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;   
+}
+
+/* --------------page2----------------- */
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+}
+
+.container button {
+    font-size: 20px;
+    display: block;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+ .container button i {
+    color: white;
+ }
+
+
+.carousel {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Container for carousel items to position buttons/icons over images */
+.item {
+    position: relative;
+}
+
+/* Position buttons/icons inside the carousel image */
+.item-action-box{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    z-index: 999;
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    text-decoration: none;
+}
+
+.download-btn {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+
+.download-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    color: #a9a4a4;
+    text-decoration: none;
+}
+
+.carousel-inner a {
+    bottom: 20px;
+    z-index: 999;
+    color: white;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-inner {
+    margin-top: 10%;
+}
+
+.carousel-inner a i {
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 40%;
+    transition: background-color 0.3s ease;   
+}
+
+.carousel-inner a i:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #a9a4a4;
+    text-decoration: none;
+}
+
+/* ------------------Responsiveness-------------------- */
+
+@media only screen and (max-width: 325px) {
+
+    .welcome-content h1 {
+        font-size: 2em;
+    }
+
+    .welcome-content .goal {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .welcome-content .goal h4 {
+        font-size: 1.5em;
+    }
+    .navbar-logo {
+        font-size: 20px;
+    }
+
+    .navbar-icons a {
+        font-size: 15px;
+    }
+
+    .carousel-inner a {
+        font-size: 2px;
+    }
+    .carousel-inner a i {
+        padding: 5px;
+        font-size: 5px;
+        }
+
+    .carousel-inner {
+        margin-top: 20%;
+    }
+
+    .container button {
+        font-size: 15px;
+        margin-left: 10px;
+        padding: 5px 2px;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .welcome-content h1 {
+        font-size: 2.2em;
+     }
+    
+    .welcome-content .goal {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .welcome-content .goal h4 {
+        font-size: 1.8em;
+    }
+
+    .navbar-logo {
+        font-size: 25px;
+    }
+
+    .navbar-icons a {
+        font-size: 15px;
+    }
+
+    .navbar-container {
+        padding: 10px 20px;
+    }
+
+    .container button {
+        font-size: 10px;
+        margin-left: 40px
+    }
+
+    .carousel-inner {
+        margin-top: 45%;
+    }
+
+    .carousel-inner a {
+        justify-content: center;
+        margin-left: 2px;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    .welcome-content .goal {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .navbar-logo {
+        font-size: 30px;
+    }
+    
+    .navbar-icons a {
+        font-size: 20px;
+    }
+    .navbar-container{
+        padding: 10px 15px;
+    }
+
+    .item-action-box{
+        left: 0%;
+        bottom: 0px;
+    }
+
+    .download-btn{
+        font-size: 12px;
+    }
+
+    .carousel-inner {
+        margin-top: 25%;
+    }
+
+    .carousel-inner a i {
+        font-size: 18px;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 994px){
+    .container{
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+
