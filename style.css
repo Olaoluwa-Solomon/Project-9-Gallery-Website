@@ -16,7 +16,6 @@ html {
     height: 100%;
     background: url('/images/Welcome\ bg.jpg') no-repeat center fixed;
     background-size: cover;
-    /* Replace with your image */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +29,7 @@ html {
     display: none;
     animation: slideDown 0.5s ease-out forwards;
 }
-.welcome-content {
+/* .welcome-content {
     text-align: center;
     color: white;
 }
@@ -52,7 +51,7 @@ html {
     font-size: 2.5em;
     font-weight: lighter;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
+} */
 
 /* Keyframes for Animations */
 @keyframes slideDown {
@@ -146,7 +145,7 @@ body {
     padding: 40px;
 }
 
-.container button {
+/* .container button {
     font-size: 20px;
     display: block;
     margin-left: 40px;
@@ -156,12 +155,35 @@ body {
     background-color: #333;
     width: 100px;
     background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 
  .container button i {
-    color: white;
+    color: #000000;
+    font-size: 20px;
  }
 
+ /* .backbtn {
+    background-color: rgba(255, 255, 255, 0.776);
+    width: 150px;
+    /* height: 50px; */
+
+ .backbtn button {
+    width: 100px;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+ }
+
+ .backbtn button i {
+    font-size: 20px;
+    color: #333;
+ }
+
+ .backbtn button:hover {
+     transform: scaleX(1.1);
+     transition: 0.3s ease-in-out;
+ }
 
 .carousel {
     width: 100%;
@@ -175,13 +197,14 @@ body {
 
 /* Position buttons/icons inside the carousel image */
 .item-action-box{
+    width: 25%;
     display: flex;
     justify-self: center;
     align-items: center;
     z-index: 999;
     position: absolute;
-    bottom: 20px;
-    left: 10%;
+    bottom: 10%;
+    left: 15%;
     text-decoration: none;
 }
 
@@ -189,11 +212,10 @@ body {
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 10px 20px;
-    margin-top: 30px;
+    padding: 10px;
     border: none;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 20px;
+    border-radius: 10px;
 
 }
 
@@ -214,7 +236,7 @@ body {
 }
 
 .carousel-inner {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .carousel-inner a i {
@@ -256,28 +278,28 @@ body {
         font-size: 15px;
     }
 
-    .carousel-inner a {
-        font-size: 2px;
+    .item-action-box {
+        width: auto;
     }
     .carousel-inner a i {
         padding: 5px;
-        font-size: 5px;
-        }
-
-    .carousel-inner {
-        margin-top: 20%;
+        font-size: 15px;   
     }
 
-    .container button {
-        font-size: 15px;
-        margin-left: 10px;
-        padding: 5px 2px;
+    .download-btn {
+        padding: 5px;
+        font-size: 13px;
     }
 
     .container {
         height: 100vh;
         width: 100%;
     }
+
+    .backbtn button {
+        width: 50px;
+    }
+
 }
 
 
@@ -309,18 +331,29 @@ body {
         padding: 10px 20px;
     }
 
-    .container button {
-        font-size: 10px;
-        margin-left: 40px
-    }
-
-    .carousel-inner {
-        margin-top: 45%;
+    .item-action-box {
+        width: auto;
     }
 
     .carousel-inner a {
         justify-content: center;
         margin-left: 2px;
+    }
+
+    .carousel-inner a i {
+        font-size: 15px;
+    }
+
+    .download-btn {
+        font-size: 13px;
+    }
+
+    .backbtn button {
+        width: 50px;
+    }
+
+    .backbtn a i {
+        font-size: 10px;
     }
 
     .container {
@@ -348,26 +381,30 @@ body {
     }
 
     .item-action-box{
-        left: 0%;
-        bottom: 0px;
+        width: auto;
     }
 
     .download-btn{
-        font-size: 12px;
-    }
-
-    .carousel-inner {
-        margin-top: 25%;
+        font-size: 16px;
     }
 
     .carousel-inner a i {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .container {
         height: 100vh;
         width: 100%;
     }
+
+    .backbtn button {
+        width: 70px;
+    }
+
+    .backbtn button i {
+        font-size: 25px;
+    }
+
 }
 
 @media only screen and (max-width: 994px){
@@ -376,5 +413,3 @@ body {
         width: 100%;
     }
 }
-
-

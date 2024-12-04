@@ -1,5 +1,5 @@
 const imageFolder = '/images'; // Base folder URL
-const imageFiles = ['feed-1.jpg', 'feed-2.jpg', 'feed-3.jpg', 'feed-4.jpg', 'feed-5.jpg', 'feed-6.jpg', 'feed-7.jpg']; // Image filenames
+const imageFiles = ['feed-1.jpg', 'feed-2.jpg', 'feed-3.jpg', 'feed-4.jpg', 'feed-5.jpg', 'feed-6.jpg']; // Image filenames
 
 
 const page2_carousel = document.getElementById('carousel_card');
